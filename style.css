@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    background: linear-gradient(135deg, #5f2c82, #49a09d); /* Updated background gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Ensure text is readable on darker backgrounds */
+  }
+  
+  .card {
+    width: 95%; /* Adjusted to cover more screen */
+    max-width: 800px; /* Increased max width */
+    height: 90vh; /* Adjusted to cover more vertical space */
+    background: rgba(0, 0, 0, 0.55); /* Darker background for contrast */
+    border-radius: 25px; /* Smoother rounded corners */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #header {
+    background: rgba(0, 0, 0, 0.6); /* Dark header background for contrast */
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  #header h1 {
+    margin: 0;
+    font-size: 2rem; /* Larger font size for header */
+    font-weight: 700;
+  }
+  
+  #message-section {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.5;
+  }
+  
+  .message#bot span {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for bot messages */
+    color: #ffffff; /* White text color for readability */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  #input-section {
+    display: flex;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Darker input section for contrast */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  #input {
+    flex-grow: 1;
+    padding: 10px 20px; /* Increased padding for better visual */
+    border: none;
+    border-radius: 25px; /* More pronounced rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Subtle input background */
+    color: #ffffff; /* Input text color */
+    margin-right: 10px;
+  }
+  
+  #input:focus {
+    outline: none;
+  }
+  
+  .send .circle {
+    background-color: #49a09d; /* Button color to match the gradient */
+  }
+  
+  .send i {
+    color: #ffffff; /* Icon color */
+  }
+  
+  /* Scrollbar and other adjustments remain the same */
+  
